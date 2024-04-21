@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.reactPlayer__wrapper {
+  @apply [&>*]:!aspect-video [&>*]:!h-[auto] [&>*]:!w-full [&_video]:!object-cover;
+}
