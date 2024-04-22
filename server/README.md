@@ -3,7 +3,7 @@
 First install the required dependencies:
 
 ```bash
-cd client
+cd server
 npm install
 ```
 
