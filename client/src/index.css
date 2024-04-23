@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 .reactPlayer__wrapper {
-  @apply [&>*]:!aspect-video [&>*]:!h-[auto] [&>*]:!w-full [&_video]:!object-cover;
+  @apply [&>*>*]:!h-[auto] [&>*>*]:!w-full [&_video]:!object-cover md:[&_video]:aspect-video;
+}
+
+.reactPlayer__wrapper > div:first-child {
+  @apply absolute left-[4%] top-[4%] z-10 !w-2/5 max-w-[18rem] 2xl:max-w-sm;
+}
+
+.reactPlayer__wrapper > div:last-child {
+  @apply grid max-h-[calc(100vh-8rem)] max-md:portrait:!h-[calc(100vh-8rem)];
 }

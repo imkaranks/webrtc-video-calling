@@ -46,7 +46,10 @@ export default function Lobby() {
 
   return (
     <div className="grid min-h-screen place-items-center">
-      <form className="w-full max-w-md" onSubmit={handleSubmit}>
+      <form
+        className="w-full max-w-md rounded-lg bg-[#171f31] p-6 shadow-lg"
+        onSubmit={handleSubmit}
+      >
         <label
           htmlFor="email"
           className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
